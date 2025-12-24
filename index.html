@@ -659,7 +659,458 @@ function pauseVideo() {
 alt="Screenshot 3">
                           <div class="caption">MAIN MENU</p>
                           </section>
+<!-- ===== DOWNLOAD SECTION ===== -->
+<section id="download" style="margin-top: 40px; background: linear-gradient(45deg, #003300 0%, #001100 100%); padding: 30px; border: 8px double #00ff00; box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <h2 style="color: #ffff00; font-family: 'Comic Sans MS', cursive; font-size: 36px; text-shadow: 3px 3px 0 #006600;">
+            <img src="https://www.animatedimages.org/data/media/56/animated-computer-image-0239.gif" alt="Download" style="vertical-align: middle; height: 50px;">
+            DOWNLOAD ACONITE ALPHA NOW!
+            <img src="https://www.animatedimages.org/data/media/56/animated-computer-image-0239.gif" alt="Download" style="vertical-align: middle; height: 50px;">
+        </h2>
+        <p style="color: #00ff00; font-size: 18px; background-color: rgba(0, 0, 0, 0.5); padding: 10px; border: 2px dotted #00ff00;">
+            Experience the first week of Momo's emotional journey
+        </p>
+    </div>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+        <!-- Download Info -->
+        <div style="flex: 1; min-width: 300px; background-color: #002200; padding: 20px; border: 5px ridge #009900;">
+            <div class="widget-title" style="background-color: #006600; color: white; padding: 15px; text-align: center; font-size: 22px; margin-bottom: 20px;">
+                <img src="https://www.animatedimages.org/data/media/56/animated-computer-image-0334.gif" alt="Info">
+                DOWNLOAD INFORMATION
+            </div>
+            
+            <table style="width: 100%; font-family: 'Courier New', monospace; color: #cccccc;">
+                <tr>
+                    <td style="color: #00ff00; padding: 10px;">Version:</td>
+                    <td><span style="color: #ffff00; font-weight: bold;">Alpha 0.1.2</span></td>
+                </tr>
+                <tr>
+                    <td style="color: #00ff00; padding: 10px;">File Size:</td>
+                    <td><span style="color: #ffff00; font-weight: bold;">1.2 GB</span></td>
+                </tr>
+                <tr>
+                    <td style="color: #00ff00; padding: 10px;">Release Date:</td>
+                    <td><span style="color: #ffff00; font-weight: bold;">October 15, 2007</span></td>
+                </tr>
+                <tr>
+                    <td style="color: #00ff00; padding: 10px;">Platform:</td>
+                    <td>
+                        <span style="color: #ffff00; font-weight: bold;">
+                            <img src="https://www.animatedimages.org/data/media/56/animated-computer-image-0226.gif" alt="Windows" style="vertical-align: middle;">
+                            Windows PC
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: #00ff00; padding: 10px;">Contents:</td>
+                    <td><span style="color: #ffff00; font-weight: bold;">1 playable week + mini-games</span></td>
+                </tr>
+                <tr>
+                    <td style="color: #00ff00; padding: 10px;">Downloads:</td>
+                    <td><span style="color: #ffff00; font-weight: bold;" id="downloadCount">892</span> users</td>
+                </tr>
+            </table>
+            
+            <div style="background-color: #000000; padding: 15px; margin-top: 20px; border: 3px dashed #ff6600;">
+                <h4 style="color: #ff6600; text-align: center;">⚠️ IMPORTANT NOTES ⚠️</h4>
+                <ul style="color: #cccccc; font-size: 14px;">
+                    <li>This is an ALPHA version - expect bugs!</li>
+                    <li>Save your progress frequently</li>
+                    <li>Report bugs to our email or Discord</li>
+                    <li>Your feedback will help improve the game</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Download Box -->
+        <div style="flex: 1; min-width: 300px; background-color: #000044; padding: 20px; border: 5px ridge #0066cc;">
+            <div class="widget-title" style="background-color: #003366; color: white; padding: 15px; text-align: center; font-size: 22px; margin-bottom: 20px;">
+                <img src="https://www.animatedimages.org/data/media/56/animated-computer-image-0189.gif" alt="Computer">
+                READY TO DOWNLOAD?
+            </div>
+            
+            <div style="text-align: center;">
+                <!-- Main Download Button -->
+                <div id="downloadButton" onclick="startRealDownload()" style="cursor: pointer; margin: 20px auto; max-width: 400px;">
+                    <div style="background: linear-gradient(45deg, #00cc00 0%, #009900 100%); padding: 25px; border: 8px outset #00ff00; border-radius: 10px; position: relative;">
+                        <div style="font-size: 28px; color: white; font-weight: bold; font-family: 'Comic Sans MS', cursive;">
+                            <img src="https://www.animatedimages.org/data/media/56/animated-computer-image-0385.gif" alt="Download" style="height: 40px; vertical-align: middle;">
+                            CLICK TO DOWNLOAD
+                            <img src="https://www.animatedimages.org/data/media/56/animated-computer-image-0385.gif" alt="Download" style="height: 40px; vertical-align: middle;">
+                        </div>
+                        <div style="color: #ffff00; font-size: 20px; margin-top: 10px;">
+                            Aconite_Alpha_0.1.2.zip
+                        </div>
+                        <div style="color: #cccccc; font-size: 16px; margin-top: 5px;">
+                            (1.2 GB)
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Alternative Download Links -->
+                <div style="background-color: #001133; padding: 15px; margin-top: 20px; border: 3px dotted #00ffff;">
+                    <h4 style="color: #00ffff; margin-bottom: 10px;">ALTERNATIVE MIRRORS</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                        <button onclick="downloadFromMirror('google_drive')" class="mirror-btn">
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google Drive" style="height: 20px; vertical-align: middle;">
+                            Google Drive
+                        </button>
+                
+                    </div>
+                </div>
+                
+                <!-- Progress Bar (hidden by default) -->
+                <div id="downloadProgress" style="display: none; margin-top: 30px;">
+                    <div style="background-color: #000000; padding: 20px; border: 4px inset #666666;">
+                        <h4 style="color: #00ffff; text-align: center;">DOWNLOAD IN PROGRESS...</h4>
+                        <div style="background-color: #222222; height: 30px; border: 3px inset #888888; margin: 15px 0;">
+                            <div id="progressBar" style="width: 0%; height: 100%; background: linear-gradient(to right, #00cc00, #00ff00); transition: width 0.3s;"></div>
+                        </div>
+                        <div style="text-align: center; color: #cccccc; font-family: 'Courier New', monospace;">
+                            <span id="progressText">0%</span> • 
+                            <span id="speedText">0 KB/s</span> • 
+                            <span id="timeRemaining">Estimating...</span>
+                        </div>
+                        <div id="downloadDetails" style="margin-top: 15px; text-align: center; color: #888888; font-size: 12px;">
+                            Aconite_Alpha_0.1.2.zip • 1.2 GB
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 15px;">
+                        <button onclick="cancelDownload()" class="cancel-btn">CANCEL DOWNLOAD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- System Requirements -->
+    <div style="background-color: #000022; padding: 25px; margin-top: 30px; border: 5px groove #6600cc;">
+        <h3 style="color: #ff00ff; text-align: center; margin-bottom: 20px;">
+            <img src="https://www.animatedimages.org/data/media/56/animated-computer-image-0085.gif" alt="System">
+            SYSTEM REQUIREMENTS
+        </h3>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div style="flex: 1; min-width: 300px; background-color: #001122; padding: 15px; border: 3px solid #0066cc;">
+                <h4 style="color: #00ccff; text-align: center;">MINIMUM</h4>
+                <ul style="color: #cccccc;">
+                    <li><strong>OS:</strong> Windows XP SP3</li>
+                    <li><strong>Processor:</strong> 1.0 GHz Pentium 4 or equivalent</li>
+                    <li><strong>Memory:</strong> 512 MB RAM</li>
+                    <li><strong>Graphics:</strong> DirectX 9.0c compatible</li>
+                    <li><strong>DirectX:</strong> Version 9.0c</li>
+                    <li><strong>Storage:</strong> 2 GB available space</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1; min-width: 300px; background-color: #001122; padding: 15px; border: 3px solid #00cc00;">
+                <h4 style="color: #00ff00; text-align: center;">RECOMMENDED</h4>
+                <ul style="color: #cccccc;">
+                    <li><strong>OS:</strong> Windows 7 or newer</li>
+                    <li><strong>Processor:</strong> 2.0 GHz Dual Core</li>
+                    <li><strong>Memory:</strong> 1 GB RAM</li>
+                    <li><strong>Graphics:</strong> DirectX 10 compatible</li>
+                    <li><strong>DirectX:</strong> Version 10</li>
+                    <li><strong>Storage:</strong> 2 GB available space</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="background-color: #330000; padding: 15px; margin-top: 20px; border: 3px dashed #ff6600;">
+            <p style="color: #ff9900; text-align: center; margin: 0;">
+                <img src="https://www.animatedimages.org/data/media/703/animated-warning-image-0004.gif" alt="Warning">
+                <strong>NOTE:</strong> Game saves are compatible between alpha versions but not guaranteed for final release.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Installation Instructions -->
+    <div style="background-color: #003322; padding: 20px; margin-top: 25px; border: 4px ridge #00aa66;">
+        <h3 style="color: #00ffaa; text-align: center;">
+            <img src="https://www.animatedimages.org/data/media/676/animated-cup-image-0026.gif" alt="Install">
+            INSTALLATION INSTRUCTIONS
+        </h3>
+        
+        <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
+            <div style="flex: 1; min-width: 200px; text-align: center;">
+                <div class="install-step">1</div>
+                <p style="color: #cccccc;">Download the .zip file</p>
+            </div>
+            <div style="flex: 1; min-width: 200px; text-align: center;">
+                <div class="install-step">2</div>
+                <p style="color: #cccccc;">Extract to any folder</p>
+            </div>
+            <div style="flex: 1; min-width: 200px; text-align: center;">
+                <div class="install-step">3</div>
+                <p style="color: #cccccc;">Run "Aconite.exe"</p>
+            </div>
+            <div style="flex: 1; min-width: 200px; text-align: center;">
+                <div class="install-step">4</div>
+                <p style="color: #cccccc;">Enjoy the game!</p>
+            </div>
+        </div>
+        
+        <p style="text-align: center; color: #88ff88; margin-top: 15px; font-size: 14px;">
+            No installation required! Just extract and play.
+        </p>
+    </div>
+    
+    <!-- Community Stats -->
+    <div style="background-color: #000000; padding: 20px; margin-top: 25px; border: 4px double #6666ff;">
+        <h3 style="color: #8888ff; text-align: center; margin-bottom: 15px;">
+            <img src="https://www.animatedimages.org/data/media/477/animated-unicorn-image-0026.gif" alt="Community">
+            ALPHA COMMUNITY STATS
+        </h3>
+        
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;">
+            <div class="stat-box">
+                <div class="stat-number" id="totalDownloads">892</div>
+                <div class="stat-label">Total Downloads</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">47</div>
+                <div class="stat-label">Bugs Reported</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">124</div>
+                <div class="stat-label">Feedback Comments</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">4.7/5</div>
+                <div class="stat-label">Average Rating</div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<style>
+    /* Add to your existing CSS */
+    .mirror-btn {
+        background: linear-gradient(to bottom, #333366 0%, #222244 100%);
+        color: white;
+        border: 3px outset #6666cc;
+        padding: 10px 15px;
+        font-family: 'Courier New', monospace;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .mirror-btn:hover {
+        background: linear-gradient(to bottom, #444488 0%, #333366 100%);
+        border: 3px inset #6666cc;
+        color: #ffff00;
+    }
+    
+    .cancel-btn {
+        background: linear-gradient(to bottom, #cc3300 0%, #992200 100%);
+        color: white;
+        border: 4px outset #ff6600;
+        padding: 10px 20px;
+        font-family: 'Comic Sans MS', cursive;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .cancel-btn:hover {
+        background: linear-gradient(to bottom, #ff5500 0%, #cc3300 100%);
+        border: 4px inset #ff6600;
+    }
+    
+    .install-step {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(45deg, #ff00ff 0%, #6600cc 100%);
+        color: white;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 auto 10px;
+        border: 3px solid white;
+    }
+    
+    .stat-box {
+        padding: 15px;
+        min-width: 150px;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+        font-weight: bold;
+        color: #00ffff;
+        font-family: 'Courier New', monospace;
+    }
+    
+    .stat-label {
+        font-size: 14px;
+        color: #cccccc;
+        margin-top: 5px;
+    }
+    
+    #downloadButton:hover {
+        transform: scale(1.02);
+        transition: transform 0.2s;
+    }
+    
+    #downloadButton:active {
+        transform: scale(0.98);
+    }
+</style>
+
+<script>
+    // Add these functions to your existing JavaScript
+    
+    let downloadInProgress = false;
+    let downloadInterval;
+    
+    function startRealDownload() {
+        if (downloadInProgress) return;
+        
+        // Get actual download link (replace with your actual file URL)
+        const downloadUrl = "YOUR_ACTUAL_DOWNLOAD_LINK_HERE.zip";
+        
+        // Show progress bar
+        document.getElementById('downloadProgress').style.display = 'block';
+        document.getElementById('downloadButton').style.opacity = '0.5';
+        document.getElementById('downloadButton').style.cursor = 'default';
+        
+        downloadInProgress = true;
+        
+        // Update status
+        document.getElementById('statusText').innerHTML = 'Downloading Aconite Alpha...';
+        
+        // Simulate download progress
+        let progress = 0;
+        const speeds = ['52 KB/s', '128 KB/s', '256 KB/s', '512 KB/s'];
+        let speedIndex = 0;
+        
+        downloadInterval = setInterval(() => {
+            // Increase progress
+            progress += Math.random() * 3;
+            
+            // Occasionally change speed
+            if (Math.random() > 0.8) {
+                speedIndex = Math.min(speedIndex + 1, speeds.length - 1);
+            }
+            
+            // Calculate remaining time
+            const remainingPercent = 100 - progress;
+            const estimatedSeconds = Math.round(remainingPercent / 2);
+            const minutes = Math.floor(estimatedSeconds / 60);
+            const seconds = estimatedSeconds % 60;
+            
+            // Update UI
+            document.getElementById('progressBar').style.width = progress + '%';
+            document.getElementById('progressText').textContent = Math.round(progress) + '%';
+            document.getElementById('speedText').textContent = speeds[speedIndex];
+            document.getElementById('timeRemaining').textContent = `${minutes}:${seconds.toString().padStart(2, '0')} remaining`;
+            
+            // Check if download is complete
+            if (progress >= 100) {
+                clearInterval(downloadInterval);
+                downloadComplete();
+            }
+        }, 200);
+    }
+    
+    function downloadComplete() {
+        downloadInProgress = false;
+        
+        // Update UI for completion
+        document.getElementById('progressBar').style.width = '100%';
+        document.getElementById('progressText').textContent = '100%';
+        document.getElementById('timeRemaining').textContent = 'Complete!';
+        
+        // Update download counter
+        const countElement = document.getElementById('downloadCount');
+        let count = parseInt(countElement.textContent);
+        countElement.textContent = (count + 1).toString();
+        
+        const totalDownloads = document.getElementById('totalDownloads');
+        let total = parseInt(totalDownloads.textContent);
+        totalDownloads.textContent = (total + 1).toString();
+        
+        // Show completion message
+        setTimeout(() => {
+            document.getElementById('downloadDetails').innerHTML = 
+                '<div style="color: #00ff00; font-size: 16px; font-weight: bold;">✓ DOWNLOAD COMPLETE!</div>' +
+                '<div style="color: #cccccc; font-size: 14px; margin-top: 10px;">Check your downloads folder for Aconite_Alpha_0.1.2.zip</div>';
+            
+            // Auto-hide progress bar after 5 seconds
+            setTimeout(() => {
+                document.getElementById('downloadProgress').style.display = 'none';
+                document.getElementById('downloadButton').style.opacity = '1';
+                document.getElementById('downloadButton').style.cursor = 'pointer';
+                resetProgressBar();
+            }, 5000);
+            
+            // Trigger actual file download (uncomment when you have real file)
+            // window.location.href = "YOUR_ACTUAL_DOWNLOAD_LINK_HERE.zip";
+            
+            // For now, show instructions
+            alert('Download simulation complete!\n\nIn a real implementation, the game file would now download automatically.\n\nExtract the ZIP file and run Aconite.exe to play!');
+        }, 1000);
+    }
+    
+    function cancelDownload() {
+        if (downloadInProgress) {
+            clearInterval(downloadInterval);
+            downloadInProgress = false;
+            
+            document.getElementById('downloadProgress').style.display = 'none';
+            document.getElementById('downloadButton').style.opacity = '1';
+            document.getElementById('downloadButton').style.cursor = 'pointer';
+            
+            resetProgressBar();
+            
+            document.getElementById('statusText').innerHTML = 'Download cancelled.';
+        }
+    }
+    
+    function resetProgressBar() {
+        document.getElementById('progressBar').style.width = '0%';
+        document.getElementById('progressText').textContent = '0%';
+        document.getElementById('speedText').textContent = '0 KB/s';
+        document.getElementById('timeRemaining').textContent = 'Estimating...';
+        document.getElementById('downloadDetails').innerHTML = 'Aconite_Alpha_0.1.2.zip • 1.2 GB';
+    }
+    
+    function downloadFromMirror(mirror) {
+        const mirrors = {
+            'google_drive': 'https://drive.google.com/file/d/1SKE8iPXHlKz9_ya-_IwXdzCc_Z2upPhf/view?usp=drive_link',
+        };
+        
+        // Update status
+        document.getElementById('statusText').innerHTML = `Opening ${mirror.replace('_', ' ').toUpperCase()}...`;
+        
+        // In real implementation, redirect to actual mirror
+        // window.open(mirrors[mirror], '_blank');
+        
+        // For demo, show message
+        alert(`In a real implementation, this would open ${mirror.replace('_', ' ')} download page.\n\nReplace the link in the JavaScript code with your actual ${mirror} file URL.`);
+    }
+    
+    // Make download button draggable for retro effect
+    document.getElementById('downloadButton').addEventListener('mousedown', function(e) {
+        this.style.transform = 'scale(0.98)';
+    });
+    
+    document.getElementById('downloadButton').addEventListener('mouseup', function(e) {
+        this.style.transform = 'scale(1)';
+    });
+    
+    document.getElementById('downloadButton').addEventListener('mouseleave', function(e) {
+        this.style.transform = 'scale(1)';
+    });
+</script>
+                              
                               <!-- ===== CONTACTS & SOCIAL MEDIA ===== -->
 <section id="contacts" style="margin-top: 40px; background: linear-gradient(to bottom, #330066 0%, #000033 100%); padding: 25px; border: 6px double #ff00ff;">
     <h2 style="text-align: center; color: #00ffff; font-family: 'Comic Sans MS', cursive;">
